@@ -1,6 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ASUS-FL8000UQ黑苹果</title>
+    <url>/archives/3851022e.html</url>
+    <content><![CDATA[<h1 id="EFI地址：-ASUS-FL8000UQ-Hackintosh"><a href="#EFI地址：-ASUS-FL8000UQ-Hackintosh" class="headerlink" title="EFI地址： ASUS-FL8000UQ-Hackintosh"></a><center>EFI地址： <a href="https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh" target="_blank" rel="noopener">ASUS-FL8000UQ-Hackintosh</a></center></h1><h1 id="ASUS-FL8000UQ-Hackintosh-For-MacOS-Mojave-Catalina"><a href="#ASUS-FL8000UQ-Hackintosh-For-MacOS-Mojave-Catalina" class="headerlink" title="ASUS-FL8000UQ-Hackintosh For MacOS Mojave/Catalina"></a><center>ASUS-FL8000UQ-Hackintosh For MacOS Mojave/Catalina</center></h1><h2 id="一、配置："><a href="#一、配置：" class="headerlink" title="一、配置："></a>一、配置：</h2><a id="more"></a>
+
+<table>
+<thead>
+<tr>
+<th>配置</th>
+<th>型号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>处理器</td>
+<td>i7-8550U</td>
+</tr>
+<tr>
+<td>核显</td>
+<td>UHD620</td>
+</tr>
+<tr>
+<td>独显</td>
+<td>GeForce 940MX（已屏蔽）</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>4G/4G 海力士DDR4 2400MHz</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>120G SSD/1T HDD</td>
+</tr>
+<tr>
+<td>声卡</td>
+<td>ALC294</td>
+</tr>
+<tr>
+<td>无线网卡</td>
+<td>BCM94360CD四天线</td>
+</tr>
+</tbody></table>
+<h2 id="二、正常工作"><a href="#二、正常工作" class="headerlink" title="二、正常工作"></a>二、正常工作</h2><ol>
+<li>CPU变频</li>
+<li>核显硬件加速，独显无法驱动已做屏蔽</li>
+<li>声卡输出（自编译AppleALC驱动）</li>
+<li>HDMI输出</li>
+<li>USB</li>
+<li>WIFI/蓝牙(已更换BCM94360CD,原装AR9565可驱动,有需要可去远景论坛查找）</li>
+<li>电量显示正常</li>
+<li>触控板</li>
+<li>睡眠和唤醒</li>
+</ol>
+<h2 id="三、一键开启HIDPI项目地址：-one-key-hidpi"><a href="#三、一键开启HIDPI项目地址：-one-key-hidpi" class="headerlink" title="三、一键开启HIDPI项目地址： one-key-hidpi"></a>三、一键开启HIDPI项目地址： <a href="https://github.com/xzhih/one-key-hidpi" target="_blank" rel="noopener">one-key-hidpi</a></h2><h2 id="四、关于F5-F12的问题。"><a href="#四、关于F5-F12的问题。" class="headerlink" title="四、关于F5~F12的问题。"></a>四、关于F5~F12的问题。</h2><p>已添加SSDT加载苹果F5~F12按键功能，不再使用Fn组合键。  </p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>F5</td>
+<td>Brightness_down</td>
+</tr>
+<tr>
+<td>F6</td>
+<td>Brightness_up</td>
+</tr>
+<tr>
+<td>F7</td>
+<td>Scan Previous Track</td>
+</tr>
+<tr>
+<td>F8</td>
+<td>Play/Pause</td>
+</tr>
+<tr>
+<td>F9</td>
+<td>Scan Next Track</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>Mute</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>Volume_down</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>Volume_up</td>
+</tr>
+</tbody></table>
+<p>如果需要用到这些按键原本的功能的话，可以删除ACPI文件下的SSDT-Fkey.aml,然后使用Karabiner Elements来进行键位调整，这样就能在使用原本功能的同时也支持Mac的功能。</p>
+<h2 id="五、注意事项"><a href="#五、注意事项" class="headerlink" title="五、注意事项"></a>五、注意事项</h2><p>1.Clover以后不再更新，仅支持到macOS Catalina 10.15.3，如有需要，自行更新Clover。10.15.3之后的版本请使用OpenCore。<br>2.如果clover开机出现ACPI Error，请删除ACPI/patch下的DSDT.aml<br>3.经多人测试，本机型最新版BIOS-309无法安装黑苹果，需要将BIOS降级到老版本: <a href="http://bbs.pcbeta.com/viewthread-1841246-1-1.html" target="_blank" rel="noopener">BIOS降级教程</a><br>4.安装完成后请使用Hackintool重新定制USB以解决睡眠问题：<a href="https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html" target="_blank" rel="noopener">USB定制教程</a><br>5.进入睡眠需要一分钟左右的时间，再此期间屏幕黑屏无法唤醒，等彻底进入睡眠后即可唤醒。<br>6.OpenCore关闭”Msic-&gt;ShowPicker”后可在开机过程中在ASUS标志出来后用alt键来显示启动菜单，笔记本自带键盘需要长按alt键，外接键盘需要不断点按alt键。</p>
+<h2 id="六、HDMI注意事项"><a href="#六、HDMI注意事项" class="headerlink" title="六、HDMI注意事项"></a>六、HDMI注意事项</h2><p>此电脑在BIOS中打开CSM兼容选项就可以在外接显示器中显示BIOS和Clover界面以及开机过程，但如果用外接显示器开机，那么黑苹果内屏将无法使用，但是10.14 Mojave中在clover里加上“igfxcflbklt=1”启动参数，开机后将笔记本盖子合上再打开即可同时使用内外屏，但注意，加上此启动参数后亮度调节将失效。此方法在10.15 Catalina中无效，所以建议10.15 Catalina不要打开CSM兼容模式，用内屏来开机，等黑苹果完全启动即可使用外屏。</p>
+<h2 id="七、关于睡眠过程中电脑自动唤醒解决方案"><a href="#七、关于睡眠过程中电脑自动唤醒解决方案" class="headerlink" title="七、关于睡眠过程中电脑自动唤醒解决方案"></a>七、关于睡眠过程中电脑自动唤醒解决方案</h2><p>当电脑出现自动唤醒后，打开终端输入 log show –last 1d | grep “Wake reason” 找到唤醒电脑的设备，然后在DSDT中搜索对应的设备，将设备下面的_PRW方法注释掉即可。clover中的DSDT已注释GLAN和XDCI。OpenCore暂未出现此问题。</p>
+<h2 id="八、本机NVRAM在Mac下可以正常使用，不需要再模拟NVRAM。如果使用OpenCore引导，就可以可在偏好设置中使用“启动磁盘”来设置默认启动项。"><a href="#八、本机NVRAM在Mac下可以正常使用，不需要再模拟NVRAM。如果使用OpenCore引导，就可以可在偏好设置中使用“启动磁盘”来设置默认启动项。" class="headerlink" title="八、本机NVRAM在Mac下可以正常使用，不需要再模拟NVRAM。如果使用OpenCore引导，就可以可在偏好设置中使用“启动磁盘”来设置默认启动项。"></a>八、本机NVRAM在Mac下可以正常使用，不需要再模拟NVRAM。如果使用OpenCore引导，就可以可在偏好设置中使用“启动磁盘”来设置默认启动项。</h2><p>如何测试是否支持NVRAM:<br>1.终端输入  sudo nvram 1212=1  后重启；<br>2.重启后打开终端输入  nvram -p | grep 1212  ，如果输出1212   1，即NVRAM工作正常，否则不正常；<br>3.测试完后终端输入  sudo nvram -d 1212  来删除自定义变量。</p>
+<h2 id="九、截图"><a href="#九、截图" class="headerlink" title="九、截图"></a>九、截图</h2><p><img src="/images/ASUS-FL8000UQ/1.png" alt="1"></p>
+<p><img src="/images/ASUS-FL8000UQ/2.png" alt="2"></p>
+<p><img src="/images/ASUS-FL8000UQ/3.png" alt="3"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>利用Gitee搭建自己的博客</title>
     <url>/archives/9447ec3f.html</url>
     <content><![CDATA[<h1 id="一、注册Gitee"><a href="#一、注册Gitee" class="headerlink" title="一、注册Gitee"></a>一、注册Gitee</h1><p>1、打开<a href="https://gitee.com/" target="_blank" rel="noopener">Gitee</a>，然后点击右上角的注册。<br>2、在接下来的页面中依次填写用户名、邮箱地址、密码。然后点击最下方的立即注册。<br>3、然后会让你验证手机号码，验证完成后就OK了。</p>
