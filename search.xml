@@ -106,7 +106,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>利用Github+Coding双线部署博客</title>
+    <title>分别利用Github和Coding来搭建博客</title>
     <url>/archives/9447ec3f.html</url>
     <content><![CDATA[<p><img src="/images/Coding/post.png" alt="post"></p>
 <a id="more"></a>
@@ -115,7 +115,7 @@
 <h1 id="二、环境准备"><a href="#二、环境准备" class="headerlink" title="二、环境准备"></a>二、环境准备</h1><p> 1、去<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a>官网下载对应系统的安装包并安装。<br> 2、安装<code>hexo</code></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 <h1 id="三、建立本地博客"><a href="#三、建立本地博客" class="headerlink" title="三、建立本地博客"></a>三、建立本地博客</h1><p> 1、创建博客。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init kkkiiinnn.gitee.io</span><br><span class="line"><span class="built_in">cd</span> kkkiiinnn.gitee.io</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <p>2、生成本地页面并试运行。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>然后打开浏览器，输入地址<code>localhost:4000</code> 即可看到效果。<br>3、配置页面。  </p>
