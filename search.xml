@@ -157,13 +157,38 @@
 </tr>
 </tbody></table>
 <p>更多具体参数请参考<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">官方文档</a></p>
-<h1 id="四、将博客部署到Github-amp-Coding上"><a href="#四、将博客部署到Github-amp-Coding上" class="headerlink" title="四、将博客部署到Github&amp;Coding上"></a>四、将博客部署到Github&amp;Coding上</h1><p>1、在<code>Github</code>上建立一个仓库，名称为<code>用户名.github.io</code>，在<code>Coding</code>上新建一个代码托管项目，名称填<code>用户名.coding.me</code>。<br>2、安装<code>hexo-deployer-git</code></p>
+<h1 id="四、给Github和Coding添加SSH公钥"><a href="#四、给Github和Coding添加SSH公钥" class="headerlink" title="四、给Github和Coding添加SSH公钥"></a>四、给Github和Coding添加SSH公钥</h1><h2 id="1、生成SSH公钥"><a href="#1、生成SSH公钥" class="headerlink" title="1、生成SSH公钥"></a>1、生成SSH公钥</h2><p>你可以按如下命令来生成 sshkey:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot;</span><br><span class="line"># Generating public&#x2F;private rsa key pair...</span><br></pre></td></tr></table></figure>
+
+<p>按照提示完成三次回车，即可生成 ssh key。用记事本打开C:\Users\xxx\.ssh\id_rsa.pub即可看到生成的公钥。</p>
+<h2 id="2、给Github添加SSH公钥"><a href="#2、给Github添加SSH公钥" class="headerlink" title="2、给Github添加SSH公钥"></a>2、给Github添加SSH公钥</h2><p>打开<a href="https://github.com/" target="_blank" rel="noopener">Github</a>，点击右上角你的头像然后选择<code>Settings</code>，在左侧栏中找到并点击<code>SSH and GPG keys</code>，然后点击右边的<code>New SSH key</code>，将你第一步生成的<code>SSH key</code>复制进来即可。然后命令行输入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>来测试是否连接成功，如果出现</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Hi XXX!You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+
+<p>即成功连接<code>Github</code>。</p>
+<h2 id="3、给Coding添加SSH公钥"><a href="#3、给Coding添加SSH公钥" class="headerlink" title="3、给Coding添加SSH公钥"></a>3、给Coding添加SSH公钥</h2><p>打开<a href="https://coding.net/" target="_blank" rel="noopener">Coding</a>，然后点击右上角你的头像然后选择<code>个人设置</code>，在左侧栏中找到并点击<code>SSH公钥</code>，，然后点击右边的<code>新增公钥</code>，将你第一步生成的<code>SSH key</code>复制进来即可。然后命令行输入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@e.coding.net</span><br></pre></td></tr></table></figure>
+
+<p>来测试是否连接成功，如果出现</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Coding 提示: Hello XX, You&#39;ve connected to Coding.net via SSH. This is a personal key.</span><br><span class="line">XX，你好，你已经通过 SSH 协议认证 Coding.net 服务，这是一个个人公钥.</span><br><span class="line">公钥指纹：xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx</span><br></pre></td></tr></table></figure>
+
+<p>即成功连接<code>Coding</code>。</p>
+<h1 id="五、将博客部署到Github-amp-Coding上"><a href="#五、将博客部署到Github-amp-Coding上" class="headerlink" title="五、将博客部署到Github&amp;Coding上"></a>五、将博客部署到Github&amp;Coding上</h1><p>1、在<code>Github</code>上建立一个仓库，名称为<code>用户名.github.io</code>，在<code>Coding</code>上新建一个代码托管项目，名称填<code>用户名.coding.me</code>。<br>2、安装<code>hexo-deployer-git</code></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>3、配置<code>blog/_config.yml</code></p>
+<p>①、单独部署到<code>Github</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:用户名&#x2F;用户名.github.io.git  &#x2F;&#x2F;复制代码仓库里的SSH地址即可</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>②、单独部署到<code>Coding</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@e.coding.net:用户名&#x2F;用户名.coding.me.git  &#x2F;&#x2F;复制代码仓库里的SSH地址即可</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>③、<code>Github&amp;Coding</code>双线部署</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">- type: git</span><br><span class="line">  repo: git@github.com:用户名&#x2F;用户名.github.io.git  &#x2F;&#x2F;复制代码仓库里的SSH地址即可</span><br><span class="line">  branch: master</span><br><span class="line">- type: git</span><br><span class="line">  repo: git@e.coding.net:用户名&#x2F;用户名.coding.me.git  &#x2F;&#x2F;复制代码仓库里的SSH地址即可</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>4、部署</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h1 id="五、访问博客"><a href="#五、访问博客" class="headerlink" title="五、访问博客"></a>五、访问博客</h1><h2 id="1、Github"><a href="#1、Github" class="headerlink" title="1、Github"></a>1、Github</h2><p>进入<code>Github</code>仓库，库点击 <code>Settings</code> 按钮进入仓库设置页面，滑到下面找到 <code>GitHub Pages</code> 项就会看到<code>用户名.github.io</code>，这就是你的<code>Github</code>博客网址，至此，你就可以通过<code>用户名.github.io</code>来进行访问你的博客了。</p>
+<h1 id="六、访问博客"><a href="#六、访问博客" class="headerlink" title="六、访问博客"></a>六、访问博客</h1><h2 id="1、Github"><a href="#1、Github" class="headerlink" title="1、Github"></a>1、Github</h2><p>进入<code>Github</code>仓库，库点击 <code>Settings</code> 按钮进入仓库设置页面，滑到下面找到 <code>GitHub Pages</code> 项就会看到<code>用户名.github.io</code>，这就是你的<code>Github</code>博客网址，至此，你就可以通过<code>用户名.github.io</code>来进行访问你的博客了。</p>
 <h2 id="2、Coding"><a href="#2、Coding" class="headerlink" title="2、Coding"></a>2、Coding</h2><p><code>Coding</code> 的 <code>Pages</code>服务目前需要实名认证才可以用，实名完后需要在 <code>项目设置</code> -&gt; <code>功能开关</code> 里面打开 <code>持续集成</code> 和 <code>持续部署</code> 两项功能：</p>
 <p><img src="/images/Coding/1.png" alt="1"></p>
 <p><img src="/images/Coding/2.png" alt="2"></p>
