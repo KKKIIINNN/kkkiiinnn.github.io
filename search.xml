@@ -30,6 +30,9 @@
 <p><img src="/images/Windows10/16.png" alt="16"></p>
 <p><img src="/images/Windows10/17.png" alt="17"></p>
 <h1 id="至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。"><a href="#至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。" class="headerlink" title="至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。"></a>至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。</h1>]]></content>
+      <tags>
+        <tag>Windows10 教程 安装</tag>
+      </tags>
   </entry>
   <entry>
     <title>ASUS-FL8000UQ黑苹果</title>
@@ -136,6 +139,9 @@
 <p><img src="/images/ASUS-FL8000UQ/2.png" alt="2"></p>
 <p><img src="/images/ASUS-FL8000UQ/3.png" alt="3"></p>
 ]]></content>
+      <tags>
+        <tag>黑苹果 EFI 教程</tag>
+      </tags>
   </entry>
   <entry>
     <title>分别利用Github和Coding来搭建博客</title>
@@ -230,6 +236,9 @@
 <p><img src="/images/Coding/5.png" alt="5"></p>
 <p>此时，<code>Coding</code>就会给我们已经设置好的访问地址，然后点击一下<code>立即部署</code> 按钮即可通过<code>Coding</code>给我们的地址来访问你的博客了。</p>
 ]]></content>
+      <tags>
+        <tag>博客 建站 教程 Github Coding</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -250,5 +259,8 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
+      <tags>
+        <tag>Hello World</tag>
+      </tags>
   </entry>
 </search>
