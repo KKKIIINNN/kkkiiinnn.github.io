@@ -53,7 +53,7 @@
 </tr>
 <tr>
 <td>核显</td>
-<td>UHD620</td>
+<td>Intel Graphics UHD620</td>
 </tr>
 <tr>
 <td>独显</td>
@@ -61,7 +61,7 @@
 </tr>
 <tr>
 <td>内存</td>
-<td>4G/4G 海力士DDR4 2400MHz</td>
+<td>4G×2 DDR4 2400MHz</td>
 </tr>
 <tr>
 <td>硬盘</td>
@@ -69,19 +69,19 @@
 </tr>
 <tr>
 <td>声卡</td>
-<td>ALC294</td>
+<td>Realtek ALC294</td>
 </tr>
 <tr>
 <td>无线网卡</td>
 <td>DW1820A-08PKF4</td>
 </tr>
 </tbody></table>
-<p>关于拆机卡BCM943602CS蓝牙4.2版和BCM943602CDP蓝牙4.2版导致在关机状态下拔插电源适配器电脑自动开机的情况，需要屏蔽拆机卡的第13针脚，也就是无线网络唤醒功能的针脚，屏蔽后即可解决此问题。至于这两张卡的蓝牙4.1版本我没有测试，不知道会不会出现此类问题，要入手需谨慎。强烈推荐DW1820A-08PKF4版本，无需屏蔽针脚，稳定运行。</p>
+<p>关于拆机卡BCM943602CS和BCM943602CDP导致在关机状态下拔插电源适配器电脑自动开机的情况，需要屏蔽拆机卡的第13针脚，也就是无线网络唤醒功能的针脚，屏蔽后即可解决此问题，入手需谨慎。强烈推荐DW1820A-08PKF4版本，无需屏蔽针脚，稳定运行。</p>
 <p><img src="/images/ASUS-FL8000UQ/4.png" alt="4"></p>
 <h2 id="二、正常工作"><a href="#二、正常工作" class="headerlink" title="二、正常工作"></a>二、正常工作</h2><ol>
 <li>CPU变频</li>
 <li>核显硬件加速，独显无法驱动已做屏蔽</li>
-<li>声卡输出（自编译AppleALC驱动）</li>
+<li>声卡输出（<del>自编译AppleALC驱动</del> 已合并至AppleALC官方项目，LayoutID=66）</li>
 <li>HDMI输出</li>
 <li>USB</li>
 <li>WIFI/蓝牙(已更换DW1820A,原装AR9565可驱动,有需要可去远景论坛查找）</li>
