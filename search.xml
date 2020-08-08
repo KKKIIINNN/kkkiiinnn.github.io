@@ -77,7 +77,7 @@
 </tr>
 </tbody></table>
 <p>关于拆机卡BCM943602CS和BCM943602CDP导致在关机状态下拔插电源适配器电脑自动开机的情况，第一种方法是屏蔽拆机卡的第13针脚，屏蔽后即可解决此问题，第二种方法是屏蔽转接卡的第54针和第55针，同样可以解决此问题。推荐使用DW1820A-08PKF4版本，无需屏蔽针脚，稳定运行。</p>
-<p><img src="/images/ASUS-FL8000UQ/4.png" alt="2"></p>
+<p><img src="/images/ASUS-FL8000UQ/2.png" alt="2"></p>
 <h2 id="二、正常工作"><a href="#二、正常工作" class="headerlink" title="二、正常工作"></a>二、正常工作</h2><ol>
 <li>CPU变频</li>
 <li>核显硬件加速，独显无法驱动已做屏蔽</li>
