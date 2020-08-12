@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Windows10安装教程</title>
+    <url>/archives/66387254.html</url>
+    <content><![CDATA[<p><img src="/images/Windows10/post.jpg" alt="post"></p>
+<a id="more"></a>
+
+<h1 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a>一、准备</h1><h3 id="1、一个大于4G的U盘"><a href="#1、一个大于4G的U盘" class="headerlink" title="1、一个大于4G的U盘"></a>1、一个大于4G的U盘</h3><p>注意提前备份好U盘上的文件，制作启动盘时会格式化里面的文件</p>
+<h3 id="2、PE制作软件"><a href="#2、PE制作软件" class="headerlink" title="2、PE制作软件"></a>2、PE制作软件</h3><p>推荐<a href="https://www.upe.net/" target="_blank" rel="noopener">优启通</a>和<a href="http://www.wepe.com.cn/" target="_blank" rel="noopener">WePE</a>工具箱</p>
+<h3 id="3、Windows10-ISO镜像"><a href="#3、Windows10-ISO镜像" class="headerlink" title="3、Windows10 ISO镜像"></a>3、Windows10 ISO镜像</h3><p>给大家推荐一个下载<a href="http://msdn.itellyou.cn/" target="_blank" rel="noopener">Windows系统</a>的网址，在百度上搜索<code>Win10</code>系统下载，很多都不是微软原版的，并集成了很多常用软件或垃圾软件进去，<code>MSDN</code>网站里是原版未经修改的<code>Windows</code>系统，它里面的资源很多，包括操作系统和<code>Office</code>软件。注意下载操作系统前，先查看自己的电脑是32位还是64位，下载对应的操作系统，保证系统和电脑硬件匹配以发挥最好的性能，<code>x86</code>对应32位，<code>x64</code>对应64位。</p>
+<p><img src="/images/Windows10/1.png" alt="1"></p>
+<h1 id="二、制作启动盘"><a href="#二、制作启动盘" class="headerlink" title="二、制作启动盘"></a>二、制作启动盘</h1><p>打开优启通，按截图操作即可。（制作前请关闭杀毒软件，防止制作失败）</p>
+<p><img src="/images/Windows10/2.png" alt="2"></p>
+<p><img src="/images/Windows10/3.png" alt="3"></p>
+<h1 id="三、进入PE系统"><a href="#三、进入PE系统" class="headerlink" title="三、进入PE系统"></a>三、进入PE系统</h1><h3 id="1、开机按ESC（华硕）键进入Boot-Menu"><a href="#1、开机按ESC（华硕）键进入Boot-Menu" class="headerlink" title="1、开机按ESC（华硕）键进入Boot Menu"></a>1、开机按ESC（华硕）键进入Boot Menu</h3><p><img src="/images/Windows10/4.jpg" alt="4"></p>
+<p>附：各品牌电脑启动热键</p>
+<p><img src="/images/Windows10/5.png" alt="5"></p>
+<h3 id="2、选择从你的U盘启动"><a href="#2、选择从你的U盘启动" class="headerlink" title="2、选择从你的U盘启动"></a>2、选择从你的U盘启动</h3><p><img src="/images/Windows10/6.jpg" alt="6"></p>
+<p><img src="/images/Windows10/7.png" alt="7"></p>
+<h1 id="四、开始安装"><a href="#四、开始安装" class="headerlink" title="四、开始安装"></a>四、开始安装</h1><h2 id="1、硬盘分区"><a href="#1、硬盘分区" class="headerlink" title="1、硬盘分区"></a>1、硬盘分区</h2><p>打开桌面上的DG软件按截图操作</p>
+<p><img src="/images/Windows10/8.png" alt="8"></p>
+<p><img src="/images/Windows10/9.png" alt="9"></p>
+<p><img src="/images/Windows10/10.png" alt="10"></p>
+<p><img src="/images/Windows10/11.png" alt="11"></p>
+<p><img src="/images/Windows10/12.png" alt="12"></p>
+<p><img src="/images/Windows10/13.png" alt="13"></p>
+<p><img src="/images/Windows10/14.png" alt="14"></p>
+<h2 id="2、安装系统"><a href="#2、安装系统" class="headerlink" title="2、安装系统"></a>2、安装系统</h2><p><img src="/images/Windows10/15.png" alt="15"></p>
+<p><img src="/images/Windows10/16.png" alt="16"></p>
+<p><img src="/images/Windows10/17.png" alt="17"></p>
+<h1 id="至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。"><a href="#至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。" class="headerlink" title="至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。"></a>至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。</h1>]]></content>
+      <tags>
+        <tag>Windows10 教程 安装</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ASUS-FL8000UQ黑苹果</title>
     <url>/archives/3851022e.html</url>
     <content><![CDATA[<p><img src="/images/ASUS-FL8000UQ/post.jpg" alt="post"></p>
@@ -109,29 +143,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/archives/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
-
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>Hello World</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>分别利用Github和Coding来搭建博客</title>
     <url>/archives/9447ec3f.html</url>
     <content><![CDATA[<p><img src="/images/Coding/post.png" alt="post"></p>
@@ -231,37 +242,26 @@
       </tags>
   </entry>
   <entry>
-    <title>Windows10安装教程</title>
-    <url>/archives/66387254.html</url>
-    <content><![CDATA[<p><img src="/images/Windows10/post.jpg" alt="post"></p>
-<a id="more"></a>
+    <title>Hello World</title>
+    <url>/archives/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
 
-<h1 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a>一、准备</h1><h3 id="1、一个大于4G的U盘"><a href="#1、一个大于4G的U盘" class="headerlink" title="1、一个大于4G的U盘"></a>1、一个大于4G的U盘</h3><p>注意提前备份好U盘上的文件，制作启动盘时会格式化里面的文件</p>
-<h3 id="2、PE制作软件"><a href="#2、PE制作软件" class="headerlink" title="2、PE制作软件"></a>2、PE制作软件</h3><p>推荐<a href="https://www.upe.net/" target="_blank" rel="noopener">优启通</a>和<a href="http://www.wepe.com.cn/" target="_blank" rel="noopener">WePE</a>工具箱</p>
-<h3 id="3、Windows10-ISO镜像"><a href="#3、Windows10-ISO镜像" class="headerlink" title="3、Windows10 ISO镜像"></a>3、Windows10 ISO镜像</h3><p>给大家推荐一个下载<a href="http://msdn.itellyou.cn/" target="_blank" rel="noopener">Windows系统</a>的网址，在百度上搜索<code>Win10</code>系统下载，很多都不是微软原版的，并集成了很多常用软件或垃圾软件进去，<code>MSDN</code>网站里是原版未经修改的<code>Windows</code>系统，它里面的资源很多，包括操作系统和<code>Office</code>软件。注意下载操作系统前，先查看自己的电脑是32位还是64位，下载对应的操作系统，保证系统和电脑硬件匹配以发挥最好的性能，<code>x86</code>对应32位，<code>x64</code>对应64位。</p>
-<p><img src="/images/Windows10/1.png" alt="1"></p>
-<h1 id="二、制作启动盘"><a href="#二、制作启动盘" class="headerlink" title="二、制作启动盘"></a>二、制作启动盘</h1><p>打开优启通，按截图操作即可。（制作前请关闭杀毒软件，防止制作失败）</p>
-<p><img src="/images/Windows10/2.png" alt="2"></p>
-<p><img src="/images/Windows10/3.png" alt="3"></p>
-<h1 id="三、进入PE系统"><a href="#三、进入PE系统" class="headerlink" title="三、进入PE系统"></a>三、进入PE系统</h1><h3 id="1、开机按ESC（华硕）键进入Boot-Menu"><a href="#1、开机按ESC（华硕）键进入Boot-Menu" class="headerlink" title="1、开机按ESC（华硕）键进入Boot Menu"></a>1、开机按ESC（华硕）键进入Boot Menu</h3><p><img src="/images/Windows10/4.jpg" alt="4"></p>
-<p>附：各品牌电脑启动热键</p>
-<p><img src="/images/Windows10/5.png" alt="5"></p>
-<h3 id="2、选择从你的U盘启动"><a href="#2、选择从你的U盘启动" class="headerlink" title="2、选择从你的U盘启动"></a>2、选择从你的U盘启动</h3><p><img src="/images/Windows10/6.jpg" alt="6"></p>
-<p><img src="/images/Windows10/7.png" alt="7"></p>
-<h1 id="四、开始安装"><a href="#四、开始安装" class="headerlink" title="四、开始安装"></a>四、开始安装</h1><h2 id="1、硬盘分区"><a href="#1、硬盘分区" class="headerlink" title="1、硬盘分区"></a>1、硬盘分区</h2><p>打开桌面上的DG软件按截图操作</p>
-<p><img src="/images/Windows10/8.png" alt="8"></p>
-<p><img src="/images/Windows10/9.png" alt="9"></p>
-<p><img src="/images/Windows10/10.png" alt="10"></p>
-<p><img src="/images/Windows10/11.png" alt="11"></p>
-<p><img src="/images/Windows10/12.png" alt="12"></p>
-<p><img src="/images/Windows10/13.png" alt="13"></p>
-<p><img src="/images/Windows10/14.png" alt="14"></p>
-<h2 id="2、安装系统"><a href="#2、安装系统" class="headerlink" title="2、安装系统"></a>2、安装系统</h2><p><img src="/images/Windows10/15.png" alt="15"></p>
-<p><img src="/images/Windows10/16.png" alt="16"></p>
-<p><img src="/images/Windows10/17.png" alt="17"></p>
-<h1 id="至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。"><a href="#至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。" class="headerlink" title="至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。"></a>至此，Windows10的安装部分已经结束，接下来重启进入系统安装驱动即可使用。</h1>]]></content>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
       <tags>
-        <tag>Windows10 教程 安装</tag>
+        <tag>Hello World</tag>
       </tags>
   </entry>
 </search>
